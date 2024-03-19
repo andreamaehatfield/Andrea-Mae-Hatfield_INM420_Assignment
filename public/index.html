@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>INM 420 Assignment 4: Andrea Mae Hatfield</title>
+
+  <!--CSS RESET-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 1. GLIDE JS LINK-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+    integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css"
+    integrity="sha512-Cn5/xnOLSKjVpNCsJZCtgQhxp00FcFnlRwgbSG7WGFq1BVvyG+LoOarjXAq//8Vstyu0Na9wvEKLWR67/wAy3w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 2. Bideo.js CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bideo.css/dist/bideo.css">
+
+  <!--EXTERNAL CSS-->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="head-top">
+
+      <a href="index.html" class="brand-name">
+        HAY
+        <span>Design Store</span>
+      </a>
+      <div>
+        <span class="head-icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="head-icon">
+          <i class="fas fa-bell"></i>
+        </span>
+        <span class="head-icon">
+          <i class="fas fa-shopping-bag"></i>
+        </span>
+        <span class="head-icon">
+          <i class="fas fa-user-circle"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="head-body container">
+      <!-- Bideo.js fullscreen background video -->
+      <div id="container">
+        <video id="bg-video" autoplay muted loop>
+          <source src="assets/img/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="head-body-content">
+        <h1 class="head-title">
+          welcome to HAY Design Store
+        </h1>
+        <p class="text">
+          In 1932, The Museum of Modern Art established the world's first curatorial department devoted to architecture
+          and design. MoMA has long recognized design’s important role in our culture alongside more traditional mediums
+          like painting and sculpture.
+        </p>
+        <!-- button -->
+        <button type="button" class="btn">
+          shop now
+        </button>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+
+
+      </div>
+
+      <div class="head-body-img">
+        <img src="assets/img/chair.png" alt="header image" />
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <!-- Glide -->
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">New Arrivals</li>
+        <li class="glide__slide">Furniture</li>
+        <li class="glide__slide">Brands</li>
+      </ul>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+      <button class="glide__bullet" data-glide-dir="=2"></button>
+    </div>
+  </div>
+  <!-- end of glide -->
+
+  <!-- trending product -->
+  <section class="trend">
+    <div class="container">
+      <div class="title">
+        <h4>trending now</h4>
+        <h2>best selling product</h2>
+      </div>
+
+      <div class="trend-grid">
+        <!-- item 1 -->
+        <div class="trend-item">
+          <img src="assets/img/9.png" alt="best product" />
+          <div class="trend-item-content">
+            <h4>TOGO® Fireside Chair</h4>
+            <h4>$5,295.00 </h4>
+            <div class="stars">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <span class="chevron-icon">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+        <!-- end of item -->
+        <!-- item 2-->
+        <div class="trend-item">
+          <img src="assets/img/10.png" alt="best product" />
+          <div class="trend-item-content">
+            <h4>Wassily Chair</h4>
+            <h4>$3,633.00</h4>
+            <div class="stars">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <span class="chevron-icon">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+        <!-- end of item -->
+        <!-- item 3-->
+        <div class="trend-item">
+          <img src="assets/img/13.png" alt="best product" />
+          <div class="trend-item-content">
+            <h4>Pacha Chair</h4>
+            <h4>$4,499.00</h4>
+            <div class="stars">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <span class="chevron-icon">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+        <!-- end of item -->
+        <!-- item 4-->
+        <div class="trend-item">
+          <img src="assets/img/14.png" alt="best product" />
+          <div class="trend-item-content">
+            <h4>Prouvé Fauteuil De Salon</h4>
+            <h4>$6,285.00</h4>
+            <div class="stars">
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="fas fa-star"></i></span>
+              <span><i class="far fa-star"></i></span>
+            </div>
+            <span class="chevron-icon">
+              <i class="fa fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+        <!-- end of item -->
+      </div>
+    </div>
+  </section>
+  <!-- end of trending product -->
+
+  <div class="underline"></div>
+
+  <!-- featured product -->
+  <section class="featured">
+    <div class="container">
+      <!--- item 1 --->
+      <div class="featured-item">
+        <div class="featured-item-img">
+          <img src="assets/img/7.png" alt="feature image" />
+        </div>
+        <div class="featured-item-content">
+          <div class="title">
+            <h4>featured product</h4>
+            <h2>PC Portable Lamp</h2>
+            <p class="item-price">$99.00</p>
+          </div>
+          <p class="text">
+            Designed by Pierre Charpin, the PC Portable Lamp (2019) provides light where it’s specifically needed, at
+            least until it’s needed elsewhere. Its durable construction and scratch- and water- resistant finish keep it
+            looking good. The light source is hidden from view by a polycarbonate diffuser. Includes touch-controlled
+            step dimmer on base and USB charging cable. Runs up to 10 hours on a single charge. Suitable for use indoors
+            and out. Bulb (included): 3W G4 LED, 3000K.
+          </p>
+          <div class="featured-btns">
+            <button type="button" class="btn">Explore</button>
+            <button type="button" class="btn">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <!--- end of item --->
+      <!--- item 2 --->
+      <div class="featured-item">
+        <div class="featured-item-img">
+          <img src="assets/img/8.png" alt="feature image" />
+        </div>
+        <div class="featured-item-content">
+          <div class="title">
+            <h4>featured product</h4>
+            <h2>Prouvé Standard Chair</h2>
+            <p class="item-price">$1,335.00</p>
+          </div>
+          <p class="text">
+            Jean Prouvé always strove for the most efficient designs, evident in classics such as his Standard Chair
+            (1934). This piece, which comprises a utilitarian yet visually arresting combination of steel and wood,
+            reflects the designer’s engineering pedigree and focus on materials, connections, and production. Voluminous
+            straight back legs bear the brunt of the occupant’s weight, and tubular front legs handle the rest. Finely
+            shaped wood seating surfaces conform nicely to the body. Made in Germany.
+
+          </p>
+          <div class="featured-btns">
+            <button type="button" class="btn">Explore</button>
+            <button type="button" class="btn">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <!--- end of item --->
+
+    </div>
+  </section>
+  <!-- end of featured product -->
+
+
+  <!-- blog -->
+  <section class="blog">
+    <div class="container">
+      <div class="title">
+        <h4>daily update</h4>
+        <h2>latest blog</h2>
+      </div>
+
+      <div class="blog-grid">
+        <!--- item 1 --->
+        <div class="blog-item">
+          <div class="blog-item-img">
+            <img src="assets/img/E.jpg" alt="Blog Image" />
+          </div>
+          <div class="blog-item-content">
+            <a href="#">creative ideas for decoration</a>
+            <div>
+              <span>March 20 | design | furniture</span>
+            </div>
+          </div>
+        </div>
+        <!--- end of item 1 --->
+        <!--- item 2 --->
+        <div class="blog-item">
+          <div class="blog-item-img">
+            <img src="assets/img/D.jpg" alt="Blog Image" />
+          </div>
+          <div class="blog-item-content">
+            <a href="#">decorate with modern style</a>
+            <div>
+              <span>March 25 | design | furniture</span>
+            </div>
+          </div>
+        </div>
+        <!--- end of item 2 --->
+        <!--- item 3 --->
+        <div class="blog-item">
+          <div class="blog-item-img">
+            <img src="assets/img/F.jpg" alt="Blog Image" />
+          </div>
+          <div class="blog-item-content">
+            <a href="#">Contemporary style</a>
+            <div>
+              <span>March 29 | design | furniture</span>
+            </div>
+          </div>
+        </div>
+        <!--- end of item 3 --->
+      </div>
+    </div>
+  </section>
+  <!-- end of blog -->
+
+  <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="title">
+          <h4>subscribe to our newsletter</h4>
+          <h2>Newsletters</h2>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="subscribe-btn">
+              subscribe
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="circle-box circle-1"></div>
+        <div class="circle-box circle-2"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end of newsletter -->
+  <!-- footer -->
+  <footer class="footer container">
+    <canvas id="footer-gradient"></canvas>
+    <div class="footer-item">
+      <h2 class="brand-name">
+        HAY <span>Design</span>
+      </h2>
+
+      <ul class="footer-icons">
+        <li>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h3>links</h3>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">download</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h3>products</h3>
+      <ul>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Storage</a></li>
+        <li><a href="#">Outdoor</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <h3>support</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">how it works</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+
+  <!--1. GLIDE JS LINK-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+    integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+
+  <!-- 2. Bideo.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bideo.js/dist/bideo.min.js"></script>
+
+  <!-- 3. Granim.js JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+
+  <!-- JQuery Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- JavaScript File Link -->
+  <script src="main.js"></script>
+</body>
+
+</html>
